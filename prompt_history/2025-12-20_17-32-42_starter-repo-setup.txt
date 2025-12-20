@@ -1,0 +1,35 @@
+Date: 2025-12-20
+Time: 17:32:42
+Thread: starter-repo-setup
+
+---
+
+Your goal is to make a "Starter Repo" for my vibe code projects using my preferred stack.
+
+The purpose will be so I can clone the repo to start projects, and not waste cycles on setting up projects.
+
+JS + Type script
+VITE build
+
+Hosted on Netlify - so include a TOML.YAML
+
+Critical - add Agents.md with two points.
+
+- any technical copy, readme, etc, should be written in this "tone"
+
+"""Direct. Clear. No fluff.
+
+Short sentences. Gets to the point. Doesn't waste time on setup or filler.
+
+Confident but not braggy. A little self-aware humor. Says what needs to be said, moves on.
+
+Practical over polished. Would rather ship something real than talk about it forever."""
+
+- also, there must be a prompt_history directory that will hold individual TXT files.  Every prompt given to you by me (or the user of this repository cloned) will be kept.  Including date, time, and plain text prompt.
+
+Include in the Agents.md that for any prompt, the first task must be persisting the prompt in the prompt history.  And same for any follow-ups.  Each entry in the single file would be for one Claude code chat thread.
+
+Code org should be like:
+
+./src/www - for static site source
+./src/funcs - for any Netlify cloud funcs
