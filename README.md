@@ -2,6 +2,17 @@
 
 Starter repo for vibe code projects. Clone it, build stuff, ship.
 
+## Philosophy
+
+This project is designed for **vibe coding from your phone**. The goal is to enable building and shipping software with minimal friction while on mobile.
+
+Key principles:
+- **Low-effort prompting** — Quick, casual prompts should work. No need for elaborate instructions.
+- **Automated tooling** — Let CI/CD and agents do the heavy lifting.
+- **Mobile-friendly workflows** — Everything should be doable from a phone keyboard.
+
+The less typing required, the better.
+
 ## Stack
 
 - TypeScript
@@ -41,3 +52,11 @@ Example: `src/funcs/hello.ts` → `/api/hello`
 ## Rules
 
 Read `AGENTS.md`. Especially the prompt history part.
+
+## Contributing
+
+PRs welcome! Just keep in mind the goal here is vibe coding from your phone.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
