@@ -55,13 +55,7 @@ Read `AGENTS.md`. Especially the prompt history part.
 
 ## Contributing
 
-PRs welcome! When proposing changes, please keep the mobile-first philosophy in mind:
-
-- Will this work well for someone coding from their phone?
-- Does it reduce friction or add complexity?
-- Can it be triggered with a short, simple prompt?
-
-If your change requires elaborate setup or verbose prompts, it might not be the right fit.
+PRs welcome! Just keep in mind the goal here is vibe coding from your phone.
 
 ## License
 
