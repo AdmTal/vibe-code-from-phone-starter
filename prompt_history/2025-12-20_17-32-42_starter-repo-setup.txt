@@ -33,3 +33,11 @@ Code org should be like:
 
 ./src/www - for static site source
 ./src/funcs - for any Netlify cloud funcs
+
+---
+
+Follow-up #1
+Date: 2025-12-20
+Time: 17:48:53
+
+Lee the example function, but is there a way to prevent its deploy?  I don't want to waste netlify resources on it.
