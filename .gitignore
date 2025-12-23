@@ -1,5 +1,7 @@
 node_modules
 dist
+dist-offline
+game.zip
 .netlify
 *.local
 .DS_Store
