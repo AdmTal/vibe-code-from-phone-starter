@@ -1,0 +1,46 @@
+Date: 2025-12-23
+Time: 19:43:59
+Thread: eruda-offline-build
+
+---
+
+Add two development features to this template:
+
+## 1. Preview Debug Console (Eruda)
+
+Add Eruda mobile debug console that auto-loads when the URL contains "preview".
+This lets you debug on mobile during Netlify preview deployments.
+
+In index.html, add before the closing </body>:
+
+1. A fixed container div for Eruda (so it doesn't break game layout):
+   <div id="eruda-container" style="position: fixed; z-index: 999999;"></div>
+
+2. A script that checks if URL contains "preview", then loads Eruda from CDN:
+   - Load from: https://cdn.jsdelivr.net/npm/eruda
+   - Init with tools: console, elements, network, resources, info
+   - Use shadow DOM and autoScale
+   - Bind to the eruda-container div
+
+## 2 - local or static site build for ITCH.IO upload
+
+Add offline build mode for Itch.io and local testing.
+
+Current build breaks when opened via file:// - CORS blocks everything.
+
+Need two build modes:
+
+npm run build - normal build for Netlify (separate files, fast)
+npm run build:offline - single HTML file with everything inlined
+Offline build should:
+
+Inline JS and CSS (vite-plugin-singlefile)
+Embed font as base64 data URL
+Embed images (gun.png, portal-gun.png) as base64
+Embed sounds (all mp3s) as base64
+Strip crossorigin attributes (breaks file://)
+Update Makefile: make itch-zip should use the offline build.
+
+--
+
+And update the readme in my tone.

@@ -12,5 +12,25 @@
       <p>Now go build something.</p>
     </main>
     <script type="module" src="./main.ts"></script>
+
+    <!-- Eruda debug console - auto-loads on Netlify preview deploys -->
+    <div id="eruda-container" style="position: fixed; z-index: 999999;"></div>
+    <script>
+      (function() {
+        if (window.location.href.includes('preview')) {
+          var script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/eruda';
+          script.onload = function() {
+            eruda.init({
+              container: document.getElementById('eruda-container'),
+              tool: ['console', 'elements', 'network', 'resources', 'info'],
+              useShadowDom: true,
+              autoScale: true
+            });
+          };
+          document.body.appendChild(script);
+        }
+      })();
+    </script>
   </body>
 </html>
